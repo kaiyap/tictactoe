@@ -26,7 +26,7 @@ if (isset($_GET['moves'])) {
 	global $PLAYER_2_SYMBOL;
 	sendResponse(200, "PLAYON", "Square #".$move.". Your turn...", $move, $PLAYER_2_SYMBOL, NULL);
 } else {
-	sendResponse(400, NULL, "Invalid Request", NULL, NULL);
+	sendResponse(400, NULL, "Invalid Request", NULL, NULL, NULL);
 }
 
 function sendResponse($http_code, $status_code, $message, $move, $symbol, $highlight) {
@@ -96,8 +96,8 @@ function hasDrawn($moves) {
 function hasWon($moves) {
 	$winningPatterns = array(	
 		array(7, 8, 9),
-		array(1, 2, 3),
 		array(4, 5, 6),
+		array(1, 2, 3),
 		array(1, 4, 7),
 		array(2, 5, 8),
 		array(3, 6, 9),
