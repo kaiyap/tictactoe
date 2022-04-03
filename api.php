@@ -77,7 +77,7 @@ function checkGameOver($moves, $player2move) {
 	
 	// Check draw
 	if (hasDrawn($moves)) {
-		sendResponse(200, "END", "Game is drawn", $lastMove, $playerSymbol, array());
+		sendResponse(200, "END", "It's a draw", $lastMove, $playerSymbol, array());
 		exit;
 	}
 }
