@@ -1,0 +1,20 @@
+.square {
+	height: 300px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tictactoe {
+	background: #FFF;
+	font-size: 50px;
+}
+.tictactoe td {
+	border-width: 10px;
+	border-color: #000;
+	height: 100px;
+	width: 100px;	
+}
+.tictactoe td:hover {
+	background: #F5F5F5;
+}
